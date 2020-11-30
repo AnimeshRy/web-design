@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honowa!</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/mobile.png" class="mobile" alt="mobile">
+            <div id="circle">
+                <div class="feature one"><img src="images/processor.png" alt="">
+                <div>
+                    <h1>Processor</h1>
+                    <p>SnapDragon 8600 </p>
+                </div></div>
+                <div class="feature two"><img src="images/display.png" alt="">
+                    <div>
+                    <h1>Display</h1>
+                    <p>6.6 Inch Penis</p>
+                </div></div>
+                <div class="feature three">
+                    <img src="images/battery.png" alt="">
+                    <div>
+                        <h1>Battrey</h1>
+                        <p>5000Hz Power</p>
+                    </div>
+                    </div>
+                <div class="feature four">
+                    <img src="images/camera.png"alt="">
+                    <div>
+                    <h1>Camera</h1>
+                    <p>Poco Loco F1 Special Camera</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <img src="images/arrow.png" id="upBtn">
+            <h3>Features</h3>
+            <img src="images/arrow.png" id="dnBtn">
+        </div>
+
+    </div>
+    <script>
+        const circle = document.getElementById("circle");
+        const upBtn = document.getElementById("upBtn");
+        const dnBtn = document.getElementById("dnBtn");
+
+        let rotateVal = circle.style.transform;
+        let rotateSum;
+
+        upBtn.onclick = function() {
+            rotateSum = rotateVal + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateVal = rotateSum;
+        }
+
+        dnBtn.onclick =  function() {
+            rotateSum = rotateVal + "rotate(+90deg)";
+            circle.style.transform = rotateSum;
+            rotateVal = rotateSum;
+        }
+    </script>
+</body>
+</html>
