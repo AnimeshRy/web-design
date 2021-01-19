@@ -13,7 +13,7 @@
 
 [MIT License](/LICENSE)
 
-Visit [Here](index.html) To View the Index.
+Visit [Here](https://animeshry.github.io/web-design/) To View the Index.
 
 #### Made with ♥
 
